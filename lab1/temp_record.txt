@@ -1,0 +1,124 @@
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ cat w2_t10.txt 
+[psm] State Run: power = 27.6000mW
+[psm] State Idle: power = 0.5700mW
+[psm] State Sleep: power = 0.0900mW
+[psm] Run -> Idle transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Run -> Sleep transition: energy  = 0.0200mJ, time = 1.0000ms
+[psm] Idle -> Run transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Sleep -> Run transition: energy  = 2.0000mJ, time = 4.0000ms
+
+[sim] Active time in profile = 2.547000s 
+[sim] Inactive time in profile = 1089.439000s
+[sim] Tot. Time w/o DPM = 1091.986000s, Tot. Time w DPM = 1091.986500s
+[sim] Total time in state Run = 3.543800s
+[sim] Total time in state Idle = 1088.363500s
+[sim] Total time in state Sleep = 0.000000s
+[sim] Timeout waiting time = 0.996800s
+[sim] Transitions time = 0.079200s
+[sim] N. of transitions = 198
+[sim] Energy for transitions = 0.0019800000J
+[sim] Tot. Energy w/o DPM = 30.1388136000J, Tot. Energy w DPM = 0.7201560750J
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ ./dpm_simulator -t 60 -psm example/psm.txt -wl ../../workloads/workloads/workload_2.txt >w2_t60.txt
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ cat w2_t60.txt 
+[psm] State Run: power = 27.6000mW
+[psm] State Idle: power = 0.5700mW
+[psm] State Sleep: power = 0.0900mW
+[psm] Run -> Idle transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Run -> Sleep transition: energy  = 0.0200mJ, time = 1.0000ms
+[psm] Idle -> Run transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Sleep -> Run transition: energy  = 2.0000mJ, time = 4.0000ms
+
+[sim] Active time in profile = 2.547000s 
+[sim] Inactive time in profile = 1089.439000s
+[sim] Tot. Time w/o DPM = 1091.986000s, Tot. Time w DPM = 1091.986500s
+[sim] Total time in state Run = 8.493700s
+[sim] Total time in state Idle = 1083.413600s
+[sim] Total time in state Sleep = 0.000000s
+[sim] Timeout waiting time = 5.946700s
+[sim] Transitions time = 0.079200s
+[sim] N. of transitions = 198
+[sim] Energy for transitions = 0.0019800000J
+[sim] Tot. Energy w/o DPM = 30.1388136000J, Tot. Energy w DPM = 0.8539518719J
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ ./dpm_simulator -t 110 -psm example/psm.txt -wl ../../workloads/workloads/workload_2.txt >w2_t110.txt
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ cat w2_t110.txt 
+[psm] State Run: power = 27.6000mW
+[psm] State Idle: power = 0.5700mW
+[psm] State Sleep: power = 0.0900mW
+[psm] Run -> Idle transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Run -> Sleep transition: energy  = 0.0200mJ, time = 1.0000ms
+[psm] Idle -> Run transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Sleep -> Run transition: energy  = 2.0000mJ, time = 4.0000ms
+
+[sim] Active time in profile = 2.547000s 
+[sim] Inactive time in profile = 1089.439000s
+[sim] Tot. Time w/o DPM = 1091.986000s, Tot. Time w DPM = 1091.986100s
+[sim] Total time in state Run = 12.189800s
+[sim] Total time in state Idle = 1079.785100s
+[sim] Total time in state Sleep = 0.000000s
+[sim] Timeout waiting time = 9.642800s
+[sim] Transitions time = 0.011200s
+[sim] N. of transitions = 28
+[sim] Energy for transitions = 0.0002800000J
+[sim] Tot. Energy w/o DPM = 30.1388136000J, Tot. Energy w DPM = 0.9521959869J
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ ./dpm_simulator -t 160 -psm example/psm.txt -wl ../../workloads/workloads/workload_2.txt >w2_t160.txt
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ cat w2_t160.txt 
+[psm] State Run: power = 27.6000mW
+[psm] State Idle: power = 0.5700mW
+[psm] State Sleep: power = 0.0900mW
+[psm] Run -> Idle transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Run -> Sleep transition: energy  = 0.0200mJ, time = 1.0000ms
+[psm] Idle -> Run transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Sleep -> Run transition: energy  = 2.0000mJ, time = 4.0000ms
+
+[sim] Active time in profile = 2.547000s 
+[sim] Inactive time in profile = 1089.439000s
+[sim] Tot. Time w/o DPM = 1091.986000s, Tot. Time w DPM = 1091.986100s
+[sim] Total time in state Run = 12.706200s
+[sim] Total time in state Idle = 1079.271900s
+[sim] Total time in state Sleep = 0.000000s
+[sim] Timeout waiting time = 10.159200s
+[sim] Transitions time = 0.008000s
+[sim] N. of transitions = 20
+[sim] Energy for transitions = 0.0002000000J
+[sim] Tot. Energy w/o DPM = 30.1388136000J, Tot. Energy w DPM = 0.9660761029J
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ ./dpm_simulator -t 160 -psm example/psm.txt -wl ../../workloads/workloads/workload_2.txt >w2_t160.txt
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ cat w2_t160.txt 
+[psm] State Run: power = 27.6000mW
+[psm] State Idle: power = 0.5700mW
+[psm] State Sleep: power = 0.0900mW
+[psm] Run -> Idle transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Run -> Sleep transition: energy  = 0.0200mJ, time = 1.0000ms
+[psm] Idle -> Run transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Sleep -> Run transition: energy  = 2.0000mJ, time = 4.0000ms
+
+[sim] Active time in profile = 2.547000s 
+[sim] Inactive time in profile = 1089.439000s
+[sim] Tot. Time w/o DPM = 1091.986000s, Tot. Time w DPM = 1091.986100s
+[sim] Total time in state Run = 12.706200s
+[sim] Total time in state Idle = 1079.271900s
+[sim] Total time in state Sleep = 0.000000s
+[sim] Timeout waiting time = 10.159200s
+[sim] Transitions time = 0.008000s
+[sim] N. of transitions = 20
+[sim] Energy for transitions = 0.0002000000J
+[sim] Tot. Energy w/o DPM = 30.1388136000J, Tot. Energy w DPM = 0.9660761029J
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ ./dpm_simulator -t 210 -psm example/psm.txt -wl ../../workloads/workloads/workload_2.txt >w2_t210.txt
+para@para-virtual-machine:~/Desktop/EMIOT_labs/lab01/dpm-simulator/dpm-simulator$ cat w2_t210.txt 
+[psm] State Run: power = 27.6000mW
+[psm] State Idle: power = 0.5700mW
+[psm] State Sleep: power = 0.0900mW
+[psm] Run -> Idle transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Run -> Sleep transition: energy  = 0.0200mJ, time = 1.0000ms
+[psm] Idle -> Run transition: energy  = 0.0100mJ, time = 0.4000ms
+[psm] Sleep -> Run transition: energy  = 2.0000mJ, time = 4.0000ms
+
+[sim] Active time in profile = 2.547000s 
+[sim] Inactive time in profile = 1089.439000s
+[sim] Tot. Time w/o DPM = 1091.986000s, Tot. Time w DPM = 1091.986100s
+[sim] Total time in state Run = 13.206200s
+[sim] Total time in state Idle = 1078.771900s
+[sim] Total time in state Sleep = 0.000000s
+[sim] Timeout waiting time = 10.659200s
+[sim] Transitions time = 0.008000s
+[sim] N. of transitions = 20
+[sim] Energy for transitions = 0.0002000000J
