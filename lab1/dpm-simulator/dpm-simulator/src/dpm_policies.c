@@ -146,12 +146,67 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
                 *next_state = PSM_STATE_RUN;
             }
             break;
+	/*simple version, using previous free time = next freetime  result:workload 2 good improve ,workload 1 bad penalty
+       case DPM_HISTORY:
 
-        case DPM_HISTORY:
-            /* Day 3: EDIT */
-            *next_state = PSM_STATE_RUN;
+            // 1. 获取预测值：取历史记录中最近的一次空闲时间
+            // DPM_HIST_WIND_SIZE 在 dpm_policies.h 中定义，通常是 5
+            // history 数组是这函数传进来的参数
+            psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
+
+            // 2. 获取阈值：可以硬编码，也可以从命令行参数 hparams 读取
+            // 这里我们假设通过命令行传入了正确的阈值，或者你直接写死
+            double threshold_idle = 0.8;   // T_be_idle
+            double threshold_sleep = 75.0; // T_be_sleep (稍微留点余量，用75ms)
+            
+            // 如果你通过命令行传参，可以用 hparams.threshold[0] 和 [1]
+            // threshold_idle = hparams.threshold[0];
+            // threshold_sleep = hparams.threshold[1];
+
+            // 3. 决策逻辑
+            if (predicted_time >= threshold_sleep) {
+                *next_state = PSM_STATE_SLEEP;
+            } 
+            else if (predicted_time >= threshold_idle) {
+                *next_state = PSM_STATE_IDLE;
+            } 
+            else {
+                *next_state = PSM_STATE_RUN;
+            }
             break;
+	*/
+	case DPM_HISTORY:
+            /* Improved Hybrid Policy  result for workload2 good improve, for workload1 close to best result of timeout policy*/
+            
+            // 1. 获取预测值 (Last Value Prediction)
+            psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
 
+            // 2. 定义阈值
+            double t_be_sleep = 75.0; // 盈亏平衡点 Sleep
+            
+            // 3. 定义一个极短的“保底超时时间” (Fallback Timeout)
+            // Part 1 的结果告诉我们要么 T=0 要么 T=1，这里我们选 1ms 作为容错
+            double safety_timeout = 1.0; 
+
+            // --- 决策逻辑 ---
+
+            // A. 如果预测时间足够长，直接去睡觉 (这是为了 Workload 2)
+            if (predicted_time >= t_be_sleep) {
+                *next_state = PSM_STATE_SLEEP;
+            }
+            // B. 如果预测时间不够睡，我们不要直接留在 RUN
+            // 而是执行一个“短超时策略” (这是为了修复 Workload 1)
+            else {
+                // 如果当前已经空闲超过了 safety_timeout (1ms)，说明预测可能偏短了，
+                // 或者这只是个普通的短空闲，无论如何，切到 IDLE 比较安全。
+                if (t_curr > t_inactive_start + safety_timeout) {
+                    *next_state = PSM_STATE_IDLE;
+                } else {
+                    // 还没到 1ms，先在 RUN 等一等，避免极其频繁的微小抖动
+                    *next_state = PSM_STATE_RUN;
+                }
+            }
+            break;
         default:
             printf("[error] unsupported policy\n");
             return 0;
