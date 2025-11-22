@@ -141,7 +141,7 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
         case DPM_TIMEOUT:
             /* Day 2: EDIT */
             if(t_curr > t_inactive_start + tparams.timeout) {
-                *next_state = PSM_STATE_SLEEP;
+                *next_state = PSM_STATE_IDLE;
             } else {
                 *next_state = PSM_STATE_RUN;
             }
