@@ -146,8 +146,8 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
                 *next_state = PSM_STATE_RUN;
             }
             break;
-	/*simple version, using previous free time = next freetime  result:workload 2 good improve ,workload 1 bad penalty
-       case DPM_HISTORY:
+	//simple version, using previous free time = next freetime  result:workload 2 good improve ,workload 1 bad penalty
+      /* case DPM_HISTORY:
 
             // 1. 获取预测值：取历史记录中最近的一次空闲时间
             // DPM_HIST_WIND_SIZE 在 dpm_policies.h 中定义，通常是 5
@@ -175,8 +175,8 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
             }
             break;
 	*/
-	/*
-	case DPM_HISTORY:
+	
+	/*case DPM_HISTORY:
             //Improved Hybrid Policy  result for workload2 good improve, for workload1 close to best result of timeout policy
             
             // 1. 获取预测值 (Last Value Prediction)
@@ -187,7 +187,7 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
             
             // 3. 定义一个极短的“保底超时时间” (Fallback Timeout)
             // Part 1 的结果告诉我们要么 T=0 要么 T=1，这里我们选 1ms 作为容错
-            double safety_timeout = 1.0; 
+            double safety_timeout = 4.0; 
 
             // --- 决策逻辑 ---
 
@@ -198,39 +198,51 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
             // B. 如果预测时间不够睡，我们不要直接留在 RUN
             // 而是执行一个“短超时策略” (这是为了修复 Workload 1)
             else {
-                // 如果当前已经空闲超过了 safety_timeout (1ms)，说明预测可能偏短了，
+                
                 // 或者这只是个普通的短空闲，无论如何，切到 IDLE 比较安全。
                 if (t_curr > t_inactive_start + safety_timeout) {
-                    *next_state = PSM_STATE_IDLE;
+                    *next_state = PSM_STATE_SLEEP;
                 } else {
                     // 还没到 1ms，先在 RUN 等一等，避免极其频繁的微小抖动
                     *next_state = PSM_STATE_RUN;
                 }
             }
-            break;
-            */
+            break;*/
+            
+            
             case DPM_HISTORY:
             // Part 3: Advanced Hybrid Policy (Inspired by Part 2 Results) 
             
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
             double t_be_sleep = 75.0; 
+            // --- 动态计算 Safety Timeout ---
+            double dynamic_safety_timeout = 0.0;  
+            int i;
             
-            // 策略 A: 确信是长空闲 (Workload 2 模式)
-            // 预测值很大，说明我们在稳定的长休眠周期里 -> 立即睡，零等待
+            // 遍历历史窗口
+            for (i = 0; i < DPM_HIST_WIND_SIZE; i++) {
+                // 只关注那些“短空闲” (Short Idle)
+                // 如果历史记录里有个 120s 的空闲，我们不关心，因为那个肯定会触发 Sleep
+                // 我们只关心那些“不够格去睡”的短空闲最长持续了多久
+                if (history[i] < t_be_sleep) {
+                    if (history[i] > dynamic_safety_timeout) {
+                        dynamic_safety_timeout = history[i];
+                    }
+                }
+            }
+
+            // A. 预测值很大，说明我们在稳定的长休眠周期里 -> 立即睡，零等待
             if (predicted_time >= t_be_sleep) {
                 *next_state = PSM_STATE_SLEEP;
             }
-            
-            // 策略 B: 预测是短空闲 (Workload 1 模式)
-            // 我们不确定这次会不会变长，所以采取“保守的 Sleep 策略” (Timeout to Sleep)
-            // 参考 Part 2 的实验数据，Workload 1 的最佳超时时间是 4ms
+            // B. 预测短 -> 使用动态计算出的超时时间进行过滤
             else {
-                double smart_timeout = 4.0; // Magic Number form Part 2 results
+                //double smart_timeout = 4.0; // Magic Number form Part 2 results
                 
-                if (t_curr > t_inactive_start + smart_timeout) {
-                    *next_state = PSM_STATE_SLEEP; // 超过 4ms 还没任务，说明可能是长空闲，切 Sleep！
+                if (t_curr > t_inactive_start + dynamic_safety_timeout) {
+                    *next_state = PSM_STATE_SLEEP;  
                 } else {
-                    *next_state = PSM_STATE_RUN;   // 还没到 4ms，先观望，避免误切
+                    *next_state = PSM_STATE_RUN;   
                 }
             }
             break;
