@@ -169,7 +169,7 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
             break;
 	*/
 	
-	/*case DPM_HISTORY:
+	case DPM_HISTORY:
 	    //Stage 2: Predictive Hybrid Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
 
@@ -191,7 +191,7 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
                     *next_state = PSM_STATE_RUN;
                 }
             }
-            break;*/
+            break;
             
             /*
             case DPM_HISTORY:
