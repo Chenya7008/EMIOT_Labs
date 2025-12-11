@@ -10,17 +10,19 @@ import matplotlib.pyplot as plt
 SIMULATOR_EXEC = './dpm_simulator'
 
 
-WORKLOAD_FILE = '../../workloads/workloads/workload_2.txt'
+#WORKLOAD_FILE = '../../workloads/workloads/workload_2.txt'
 # 任务2: 分析 workload2.txt (使用时请取消下面的注释，并注释掉上面一行)
 
 #WORKLOAD_FILE = '../../workloads/workloads/workload_2.txt'
 # PSM 文件的路径 (通常保持不变，与您的命令一致)
-
+#WORKLOAD_FILE = '../../workloads/workloads/workload_hover.txt'
+WORKLOAD_FILE = '../../workloads/workloads/workload_hover_120000.txt'
+#WORKLOAD_FILE = '../../workloads/workloads/workload_ramp.txt'
 PSM_FILE = 'example/psm.txt'
 
 # 你想要测试的超时值范围
 # 例如 range(1, 101, 2) 表示从1到100，每隔2测试一次 (1, 3, 5...)
-TIMEOUT_RANGE = range(0, 200, 1)
+TIMEOUT_RANGE = range(0,30, 1)
 
 # ==============================================================================
 # 2. 脚本核心功能区 - 无需修改

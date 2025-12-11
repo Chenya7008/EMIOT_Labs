@@ -138,16 +138,17 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
 {
     switch (policy) {
 
+        
         case DPM_TIMEOUT:
-            /* Day 2: EDIT */
             if(t_curr > t_inactive_start + tparams.timeout) {
-                *next_state = PSM_STATE_IDLE;
+                *next_state = PSM_STATE_SLEEP;
             } else {
                 *next_state = PSM_STATE_RUN;
             }
             break;
+
 	//simple version, using previous free time = next freetime  result:workload 2 good improve ,workload 1 bad penalty
-      /* case DPM_HISTORY:
+   /* case DPM_HISTORY:
 
             //Stage 1: Simple Predictive Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
@@ -166,10 +167,9 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
             else {
                 *next_state = PSM_STATE_RUN;
             }
-            break;
-	*/
+            break;*/
 	
-	case DPM_HISTORY:
+	/*case DPM_HISTORY:
 	    //Stage 2: Predictive Hybrid Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
 
@@ -192,9 +192,9 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
                 }
             }
             break;
+            */
             
-            /*
-            case DPM_HISTORY:
+          /* case DPM_HISTORY:
             
             //Stage 3: Adaptive Hybrid Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
@@ -226,14 +226,15 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
                     *next_state = PSM_STATE_RUN;   
                 }
             }
-            break;
+            break;*/
+            
         default:
             printf("[error] unsupported policy\n");
             return 0;
-    }*/
+    }
+    return 1;
 }
-	return 1;
-}
+
 
 /* initialize inactive time history */
 void dpm_init_history(psm_time_t *h)
