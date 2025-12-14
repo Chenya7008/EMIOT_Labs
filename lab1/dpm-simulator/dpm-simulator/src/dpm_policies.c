@@ -139,16 +139,18 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
     switch (policy) {
 
         
-        case DPM_TIMEOUT:
+      /*case DPM_TIMEOUT:
             if(t_curr > t_inactive_start + tparams.timeout) {
                 *next_state = PSM_STATE_SLEEP;
+                //printf("DEBUG check transition ->: curr%.2f\n and timeout%.2f\n", t_curr, tparams.timeout);
             } else {
                 *next_state = PSM_STATE_RUN;
+                //printf("DEBUG check no transition ->: curr%.2f\n and timeout%.2f\n", t_curr, tparams.timeout);
             }
-            break;
+            break;*/
 
 	//simple version, using previous free time = next freetime  result:workload 2 good improve ,workload 1 bad penalty
-   /* case DPM_HISTORY:
+  /* case DPM_HISTORY:
 
             //Stage 1: Simple Predictive Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
@@ -167,9 +169,9 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
             else {
                 *next_state = PSM_STATE_RUN;
             }
-            break;*/
-	
-	/*case DPM_HISTORY:
+            break;
+	*/
+	case DPM_HISTORY:
 	    //Stage 2: Predictive Hybrid Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
 
@@ -192,9 +194,9 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
                 }
             }
             break;
-            */
             
-          /* case DPM_HISTORY:
+            
+        /* case DPM_HISTORY:
             
             //Stage 3: Adaptive Hybrid Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
@@ -263,6 +265,10 @@ dpm_work_item *dpm_init_work_queue(int *num_items, char *fwl) {
         printf("[error] Can't open workload file %s!\n", fwl);
 		return NULL;
     }
+    double check_arrival, check_duration;
+    fscanf(fp, "%lf%lf", &check_arrival, &check_duration);
+    printf("DEBUG: First line of data in file is: %.2f %.2f\n", check_arrival, check_duration);
+    rewind(fp);
 
     // compute number of work items to allocate correctly sized array
     n_lines = 0;

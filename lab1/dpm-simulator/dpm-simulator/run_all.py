@@ -13,16 +13,16 @@ SIMULATOR_EXEC = './dpm_simulator'
 #WORKLOAD_FILE = '../../workloads/workloads/workload_2.txt'
 # 任务2: 分析 workload2.txt (使用时请取消下面的注释，并注释掉上面一行)
 
-#WORKLOAD_FILE = '../../workloads/workloads/workload_2.txt'
+#WORKLOAD_FILE = '../../workloads/workloads/workload_1.txt'
 # PSM 文件的路径 (通常保持不变，与您的命令一致)
-#WORKLOAD_FILE = '../../workloads/workloads/workload_hover.txt'
-WORKLOAD_FILE = '../../workloads/workloads/workload_hover_120000.txt'
+WORKLOAD_FILE = '../../workloads/workloads/workload_hover.txt'
 #WORKLOAD_FILE = '../../workloads/workloads/workload_ramp.txt'
+
 PSM_FILE = 'example/psm.txt'
 
 # 你想要测试的超时值范围
 # 例如 range(1, 101, 2) 表示从1到100，每隔2测试一次 (1, 3, 5...)
-TIMEOUT_RANGE = range(0,30, 1)
+TIMEOUT_RANGE = range(0,11, 1)
 
 # ==============================================================================
 # 2. 脚本核心功能区 - 无需修改
@@ -67,6 +67,58 @@ def parse_output(output_text):
             parsed_data[key] = None
             
     return parsed_data
+
+
+
+def analyze_workload_distribution(filepath):
+    """
+    直接读取 workload 文件，计算所有 idle time 的分布情况。
+    这能帮你解释为什么在特定 Timeout 值发生了 Transition 骤降。
+    """
+    try:
+        # 读取 workload 文件 (假设是 空格分隔)
+        # 格式: start_time duration
+        df = pd.read_csv(filepath, sep=r'\s+', header=None, names=['start', 'duration'])
+        
+        # 计算 Idle Time
+        # Idle = 当前任务开始时间 - (上一个任务开始时间 + 上一个任务持续时间)
+        df['prev_end'] = df['start'].shift(1) + df['duration'].shift(1)
+        df['idle_time'] = df['start'] - df['prev_end']
+        
+        # 去掉第一行 (NaN) 和 负数/零 (如果有的话)
+        df = df.dropna()
+        df = df[df['idle_time'] > 0]
+        
+        # 统计每种 idle time 出现的次数
+        distribution = df['idle_time'].value_counts().sort_index()
+        
+        print("\n" + "="*50)
+        print(f"WORKLOAD 深度透视: {filepath}")
+        print("="*50)
+        print(f"{'Idle Time (ms)':<20} | {'Count (出现的次数)':<15} | {'需要设置的 Timeout > X 才能过滤'}")
+        print("-" * 65)
+        
+        for idle_val, count in distribution.items():
+            # 只有当 Timeout 设置得比 idle_val 大时，这个 idle 期间才不会发生 transition
+            threshold = int(idle_val)
+            print(f"{idle_val:<20} | {count:<15} | Timeout > {threshold} ms")
+            
+        print("-" * 65)
+        print("提示: 当你的 Timeout 设置跨过上述 'Idle Time' 值时，")
+        print("      Transition 次数就会发生'阶梯式'下降。")
+        print("="*50 + "\n")
+        
+    except Exception as e:
+        print(f"无法分析 Workload 文件: {e}")
+
+# ==========================================
+# 在主程序中调用 (放在循环开始前)
+# ==========================================
+# ... 你的代码 ...
+
+# 在这里插入调用:
+analyze_workload_distribution(WORKLOAD_FILE)
+
 
 # --- 主程序开始 ---
 all_results = []

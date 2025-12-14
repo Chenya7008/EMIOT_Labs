@@ -26,8 +26,8 @@ def generate_file(filename, pattern_data):
 hover_data = []
 # 生成 50 个周期，足够测试了
 for _ in range(50):
-    hover_data.append((10, 80)) # 长空闲 (应睡)
-    hover_data.append((10, 5))  # 短空闲 (不应睡)
+    hover_data.append((10, 120000)) # 长空闲 (应睡)
+    hover_data.append((10, 4))  # 短空闲 (不应睡)
 
 generate_file("workload_hover.txt", hover_data)
 
@@ -36,9 +36,9 @@ generate_file("workload_hover.txt", hover_data)
 #    Active 10ms <-> Idle 1, 2, 5, 10, 50 ms
 # ==========================================
 #ramp_data = []
-#delays = [1, 2, 5, 10, 20, 30, 40, 50]
+#delays = [6, 6, 6, 100000, 6, 6, 6, 100000]
 # 重复 10 轮
 #for _ in range(10):
  #   for d in delays:
-  #      ramp_data.append((10, d))
+ #       ramp_data.append((10, d))
 #generate_file("workload_ramp.txt", ramp_data)
