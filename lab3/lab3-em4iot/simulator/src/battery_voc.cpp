@@ -42,8 +42,20 @@ void battery_voc::processing()
     }
 
     // SOC and battery Voc relationship
-    v_oc.write(-18.64842845, 44.69486002, -36.60037106, 12.55851751, 2.05464539); 
-    r_s.write(-4.5524e-4, 1.16e-3, -9.1822e-4, 1.77e-4, 1.0329e-4); 
+    double val_voc = -18.64842845 * pow(tmpsoc, 4) 
+                     + 44.69486002 * pow(tmpsoc, 3) 
+                     - 36.60037106 * pow(tmpsoc, 2) 
+                     + 12.55851751 * tmpsoc 
+                     + 2.05464539;
+                     
+    v_oc.write(val_voc); // 将计算结果写入端口
+     double val_rs = -0.00045524 * pow(tmpsoc, 4) 
+                    + 0.00116024 * pow(tmpsoc, 3) 
+                    - 0.00091822 * pow(tmpsoc, 2) 
+                    + 0.000177   * tmpsoc 
+                    + 0.00010329;
+                    
+    r_s.write(val_rs); // 将计算结果写入端口
 
     // When the battery SOC decreases under 1%, the simulation stops.	
     if(tmpsoc <= 0.01)
