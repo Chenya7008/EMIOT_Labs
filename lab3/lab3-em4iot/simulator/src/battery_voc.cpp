@@ -23,7 +23,7 @@ void battery_voc::processing()
     Compute actual state-of-charge solving the integral:
     SOC_t = SOC_{t-1} - \int^{t}_{-inf} i(\tau) / C d\tau
     */
-    c_nom = 3200.0; // mAh, Nominal Capacity
+    double c_nom = 3200.0; // mAh, Nominal Capacity
     tmpsoc -= (((tmpcurrent + prev_i_batt) * SIM_STEP) / (2 * 3600 * c_nom)); // 3600 * Cnom, mAh to mAs cause [sim step] = [s]
     prev_i_batt = tmpcurrent; // Update
 
