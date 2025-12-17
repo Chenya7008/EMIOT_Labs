@@ -15,7 +15,8 @@ void bus::processing()
                           + i_mic_click_sensor.read()
                           ;
 
-    double tot_scavenged = real_i_pv.read();
+    double num_pv_panels = 3.0; 
+    double tot_scavenged = real_i_pv.read() * num_pv_panels;
 
     double tot_requested = tot_consumed - tot_scavenged;
 
