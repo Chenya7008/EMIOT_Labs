@@ -23,10 +23,14 @@ void battery_voc::processing()
     Compute actual state-of-charge solving the integral:
     SOC_t = SOC_{t-1} - \int^{t}_{-inf} i(\tau) / C d\tau
     */
+
     double single_battery_capacity = 3200.0;//signal battery capacity
     double num_batteries = 1.0; // 这里改为你想模拟的数量
     double c_nom = single_battery_capacity * num_batteries; // mAh, Nominal Capacity
     
+
+    //double c_nom = 3200.0; // mAh, Nominal Capacity
+
     tmpsoc -= (((tmpcurrent + prev_i_batt) * SIM_STEP) / (2 * 3600 * c_nom)); // 3600 * Cnom, mAh to mAs cause [sim step] = [s]
     prev_i_batt = tmpcurrent; // Update
 
