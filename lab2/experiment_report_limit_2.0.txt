@@ -1,0 +1,303 @@
+Assignment 2 - Part 2 Optimized Report
+Distortion Constraint: < 2.0%
+--------------------------------------------------
+--- Image_0 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.0
+  Power Saving:  16.02%
+--- Image_1 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.14%
+--- Image_2 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.14%
+--- Image_3 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.39%
+--- Image_4 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.5
+  Power Saving:  26.27%
+--- Image_5 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  15.63%
+--- Image_6 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  24.43%
+--- Image_7 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.20%
+--- Image_8 ---
+  Voltage:       12.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  31.63%
+--- Image_9 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.12%
+--- Image_10 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.43%
+--- Image_11 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.16%
+--- Image_12 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.27%
+--- Image_13 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.86%
+--- Image_14 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.22%
+--- Image_15 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.26%
+--- Image_16 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.52%
+--- Image_17 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.39%
+--- Image_18 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  22.91%
+--- Image_19 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.5
+  Power Saving:  26.45%
+--- Image_20 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.3
+  Power Saving:  26.33%
+--- Image_21 ---
+  Voltage:       12.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  32.44%
+--- Image_22 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  22.69%
+--- Image_23 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.40%
+--- Image_24 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.5
+  Power Saving:  24.35%
+--- Image_25 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  24.20%
+--- Image_26 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.21%
+--- Image_27 ---
+  Voltage:       13.0 V
+  Strategy:      contrast
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.7
+  Power Saving:  26.02%
+--- Image_28 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.43%
+--- Image_29 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  24.05%
+--- Image_30 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  24.03%
+--- Image_31 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.07%
+--- Image_32 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.10%
+--- Image_33 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.5
+  Power Saving:  24.29%
+--- Image_34 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.5
+  Power Saving:  25.10%
+--- Image_35 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  25.01%
+--- Image_36 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.24%
+--- Image_37 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.02%
+--- Image_38 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  22.43%
+--- Image_39 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.17%
+--- Image_40 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  23.63%
+--- Image_41 ---
+  Voltage:       12.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  31.37%
+--- Image_42 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.28%
+--- Image_43 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  24.66%
+--- Image_44 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.26%
+--- Image_45 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.02%
+--- Image_46 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.47%
+--- Image_47 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.53%
+--- Image_48 ---
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.0
+  Power Saving:  16.09%
+--- Image_49 ---
+  Voltage:       13.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.5
+  Power Saving:  23.64%

@@ -1,0 +1,403 @@
+Part 2 Report - High Precision (0.5V Step)
+Distortion Constraint: < 2.0%
+------------------------------------------------------------
+--- Image_0 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0200 (Luminance shift)
+  Actual b_factor: 1.0700 (Contrast scale)
+  Power Saving:    19.09%
+  Distortion:      1.94%
+
+--- Image_1 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    19.93%
+  Distortion:      1.83%
+
+--- Image_2 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    19.66%
+  Distortion:      1.87%
+
+--- Image_3 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    20.08%
+  Distortion:      1.96%
+
+--- Image_4 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.0833 (Contrast scale)
+  Power Saving:    29.47%
+  Distortion:      1.99%
+
+--- Image_5 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0200 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    20.33%
+  Distortion:      1.99%
+
+--- Image_6 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0267 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    24.43%
+  Distortion:      1.96%
+
+--- Image_7 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0100 (Luminance shift)
+  Actual b_factor: 1.0700 (Contrast scale)
+  Power Saving:    20.34%
+  Distortion:      1.86%
+
+--- Image_8 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600 (Luminance shift)
+  Actual b_factor: 1.1400 (Contrast scale)
+  Power Saving:    31.63%
+  Distortion:      1.84%
+
+--- Image_9 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0200 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    21.07%
+  Distortion:      2.00%
+
+--- Image_10 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    23.43%
+  Distortion:      1.89%
+
+--- Image_11 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    28.28%
+  Distortion:      1.99%
+
+--- Image_12 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    20.02%
+  Distortion:      1.91%
+
+--- Image_13 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    23.86%
+  Distortion:      1.82%
+
+--- Image_14 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    28.07%
+  Distortion:      1.93%
+
+--- Image_15 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0500 (Contrast scale)
+  Power Saving:    18.96%
+  Distortion:      1.86%
+
+--- Image_16 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    23.52%
+  Distortion:      1.87%
+
+--- Image_17 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0500 (Contrast scale)
+  Power Saving:    19.73%
+  Distortion:      1.99%
+
+--- Image_18 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    22.91%
+  Distortion:      1.82%
+
+--- Image_19 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.0833 (Contrast scale)
+  Power Saving:    29.25%
+  Distortion:      1.94%
+
+--- Image_20 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    28.64%
+  Distortion:      1.87%
+
+--- Image_21 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600 (Luminance shift)
+  Actual b_factor: 1.1400 (Contrast scale)
+  Power Saving:    32.44%
+  Distortion:      1.89%
+
+--- Image_22 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    22.69%
+  Distortion:      1.74%
+
+--- Image_23 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0200 (Luminance shift)
+  Actual b_factor: 1.0500 (Contrast scale)
+  Power Saving:    20.01%
+  Distortion:      2.00%
+
+--- Image_24 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0667 (Contrast scale)
+  Power Saving:    24.35%
+  Distortion:      1.99%
+
+--- Image_25 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0267 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    24.20%
+  Distortion:      1.84%
+
+--- Image_26 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    20.04%
+  Distortion:      1.87%
+
+--- Image_27 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0333 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    28.43%
+  Distortion:      1.90%
+
+--- Image_28 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0200 (Luminance shift)
+  Actual b_factor: 1.0500 (Contrast scale)
+  Power Saving:    20.42%
+  Distortion:      1.99%
+
+--- Image_29 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    24.05%
+  Distortion:      1.86%
+
+--- Image_30 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0267 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    24.03%
+  Distortion:      1.89%
+
+--- Image_31 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0500 (Contrast scale)
+  Power Saving:    19.62%
+  Distortion:      1.89%
+
+--- Image_32 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    23.10%
+  Distortion:      1.81%
+
+--- Image_33 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0667 (Contrast scale)
+  Power Saving:    24.29%
+  Distortion:      1.98%
+
+--- Image_34 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    28.62%
+  Distortion:      2.00%
+
+--- Image_35 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    25.01%
+  Distortion:      2.00%
+
+--- Image_36 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    19.85%
+  Distortion:      1.90%
+
+--- Image_37 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    27.91%
+  Distortion:      1.98%
+
+--- Image_38 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    22.43%
+  Distortion:      1.85%
+
+--- Image_39 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0100 (Luminance shift)
+  Actual b_factor: 1.0500 (Contrast scale)
+  Power Saving:    20.92%
+  Distortion:      2.00%
+
+--- Image_40 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0267 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    23.63%
+  Distortion:      1.94%
+
+--- Image_41 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600 (Luminance shift)
+  Actual b_factor: 1.1400 (Contrast scale)
+  Power Saving:    31.37%
+  Distortion:      1.83%
+
+--- Image_42 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0700 (Contrast scale)
+  Power Saving:    19.37%
+  Distortion:      1.93%
+
+--- Image_43 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    27.26%
+  Distortion:      1.93%
+
+--- Image_44 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0100 (Luminance shift)
+  Actual b_factor: 1.0500 (Contrast scale)
+  Power Saving:    20.77%
+  Distortion:      1.99%
+
+--- Image_45 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500 (Luminance shift)
+  Actual b_factor: 1.1167 (Contrast scale)
+  Power Saving:    28.39%
+  Distortion:      1.98%
+
+--- Image_46 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0700 (Contrast scale)
+  Power Saving:    19.27%
+  Distortion:      1.92%
+
+--- Image_47 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0933 (Contrast scale)
+  Power Saving:    23.53%
+  Distortion:      1.87%
+
+--- Image_48 ---
+  Optimal Voltage: 13.5 V
+  Strategy:        both
+  Actual b_offset: 0.0300 (Luminance shift)
+  Actual b_factor: 1.0300 (Contrast scale)
+  Power Saving:    19.85%
+  Distortion:      1.84%
+
+--- Image_49 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400 (Luminance shift)
+  Actual b_factor: 1.0667 (Contrast scale)
+  Power Saving:    23.64%
+  Distortion:      1.85%
+

@@ -5,350 +5,450 @@ Distortion Constraint: < 2.0%
 --- Image: Image_0 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      contrast
-  Power Saving:  14.93%
-  Distortion:    1.7092%
+  Strategy:      brightness
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.3
+  Power Saving:  16.02%
+  Distortion:    1.9244%
 
 --- Image: Image_1 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.74%
-  Distortion:    1.8230%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.66%
+  Distortion:    1.8117%
 
 --- Image: Image_2 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.74%
-  Distortion:    1.8927%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.64%
+  Distortion:    1.8834%
 
 --- Image: Image_3 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.92%
-  Distortion:    1.9555%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.86%
+  Distortion:    1.9449%
 
 --- Image: Image_4 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  23.38%
-  Distortion:    1.5429%
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.5
+  Power Saving:  26.27%
+  Distortion:    1.9976%
 
 --- Image: Image_5 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.28%
-  Distortion:    1.8077%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.12%
+  Distortion:    1.8028%
 
 --- Image: Image_6 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  24.33%
-  Distortion:    1.9407%
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  24.43%
+  Distortion:    1.9608%
 
 --- Image: Image_7 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.78%
-  Distortion:    1.7823%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.70%
+  Distortion:    1.7674%
 
 --- Image: Image_8 ---
   [Best Configuration]
   Voltage:       12.0 V
-  Strategy:      brightness
-  Power Saving:  32.27%
-  Distortion:    1.9575%
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  31.63%
+  Distortion:    1.8382%
 
 --- Image: Image_9 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.69%
-  Distortion:    1.7779%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.60%
+  Distortion:    1.7661%
 
 --- Image: Image_10 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.62%
-  Distortion:    1.7428%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.43%
+  Distortion:    1.8914%
 
 --- Image: Image_11 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  24.06%
-  Distortion:    1.7796%
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.16%
+  Distortion:    1.9503%
 
 --- Image: Image_12 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.85%
-  Distortion:    1.8765%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.79%
+  Distortion:    1.8665%
 
 --- Image: Image_13 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.70%
-  Distortion:    1.6567%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.86%
+  Distortion:    1.8165%
 
 --- Image: Image_14 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  23.67%
-  Distortion:    1.6952%
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.22%
+  Distortion:    1.9545%
 
 --- Image: Image_15 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      contrast
-  Power Saving:  14.72%
-  Distortion:    1.6164%
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.3
+  Power Saving:  16.26%
+  Distortion:    1.9244%
 
 --- Image: Image_16 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.73%
-  Distortion:    1.7316%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.52%
+  Distortion:    1.8707%
 
 --- Image: Image_17 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      contrast
-  Power Saving:  15.00%
-  Distortion:    1.6506%
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.3
+  Power Saving:  16.39%
+  Distortion:    1.9392%
 
 --- Image: Image_18 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.45%
-  Distortion:    1.7591%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  22.91%
+  Distortion:    1.8195%
 
 --- Image: Image_19 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  22.80%
-  Distortion:    1.4182%
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.5
+  Power Saving:  26.45%
+  Distortion:    1.9918%
 
 --- Image: Image_20 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  23.50%
-  Distortion:    1.5619%
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.3
+  Power Saving:  26.33%
+  Distortion:    1.9887%
 
 --- Image: Image_21 ---
   [Best Configuration]
   Voltage:       12.0 V
-  Strategy:      brightness
-  Power Saving:  32.97%
-  Distortion:    1.9721%
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  32.44%
+  Distortion:    1.8922%
 
 --- Image: Image_22 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.65%
-  Distortion:    1.7292%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  22.69%
+  Distortion:    1.7351%
 
 --- Image: Image_23 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.93%
-  Distortion:    1.9868%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.87%
+  Distortion:    1.9773%
 
 --- Image: Image_24 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.72%
-  Distortion:    1.7073%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.5
+  Power Saving:  24.35%
+  Distortion:    1.9918%
 
 --- Image: Image_25 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  24.57%
-  Distortion:    1.9781%
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  24.20%
+  Distortion:    1.8350%
 
 --- Image: Image_26 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.76%
-  Distortion:    1.8433%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.67%
+  Distortion:    1.8308%
 
 --- Image: Image_27 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  21.85%
-  Distortion:    1.6341%
+  Strategy:      contrast
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  26.02%
+  Distortion:    1.9928%
 
 --- Image: Image_28 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.94%
-  Distortion:    1.8922%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.90%
+  Distortion:    1.8833%
 
 --- Image: Image_29 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.58%
-  Distortion:    1.6536%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  24.05%
+  Distortion:    1.8628%
 
 --- Image: Image_30 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.57%
-  Distortion:    1.6371%
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  24.03%
+  Distortion:    1.8900%
 
 --- Image: Image_31 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.58%
-  Distortion:    1.9548%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.45%
+  Distortion:    1.9491%
 
 --- Image: Image_32 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.71%
-  Distortion:    1.7438%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.10%
+  Distortion:    1.8066%
 
 --- Image: Image_33 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.68%
-  Distortion:    1.6971%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.5
+  Power Saving:  24.29%
+  Distortion:    1.9824%
 
 --- Image: Image_34 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  23.84%
-  Distortion:    1.7451%
+  Strategy:      both
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.5
+  Power Saving:  25.10%
+  Distortion:    1.9321%
 
 --- Image: Image_35 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.62%
-  Distortion:    1.7130%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  25.01%
+  Distortion:    1.9995%
 
 --- Image: Image_36 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.80%
-  Distortion:    1.9036%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.72%
+  Distortion:    1.8946%
 
 --- Image: Image_37 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.26%
-  Distortion:    1.4793%
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.02%
+  Distortion:    1.8906%
 
 --- Image: Image_38 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.40%
-  Distortion:    1.7668%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  22.43%
+  Distortion:    1.8510%
 
 --- Image: Image_39 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.74%
-  Distortion:    1.7881%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.66%
+  Distortion:    1.7763%
 
 --- Image: Image_40 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.28%
-  Distortion:    1.6668%
+  Off_Coeff:     0.2
+  Fac_Coeff:     0.7
+  Power Saving:  23.63%
+  Distortion:    1.9369%
 
 --- Image: Image_41 ---
   [Best Configuration]
-  Voltage:       13.0 V
-  Strategy:      contrast
-  Power Saving:  27.14%
-  Distortion:    1.9413%
+  Voltage:       12.0 V
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  31.37%
+  Distortion:    1.8349%
 
 --- Image: Image_42 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      contrast
-  Power Saving:  15.18%
-  Distortion:    1.7160%
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.3
+  Power Saving:  16.28%
+  Distortion:    1.9311%
 
 --- Image: Image_43 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  22.33%
-  Distortion:    1.8619%
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  24.66%
+  Distortion:    1.8576%
 
 --- Image: Image_44 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.82%
-  Distortion:    1.8180%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.76%
+  Distortion:    1.8082%
 
 --- Image: Image_45 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  23.84%
-  Distortion:    1.8226%
+  Strategy:      both
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.7
+  Power Saving:  25.02%
+  Distortion:    1.8964%
 
 --- Image: Image_46 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      contrast
-  Power Saving:  15.10%
-  Distortion:    1.6827%
+  Strategy:      brightness
+  Off_Coeff:     0.1
+  Fac_Coeff:     0.3
+  Power Saving:  16.47%
+  Distortion:    1.9689%
 
 --- Image: Image_47 ---
   [Best Configuration]
-  Voltage:       14.0 V
+  Voltage:       13.0 V
   Strategy:      both
-  Power Saving:  16.49%
-  Distortion:    1.7018%
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.7
+  Power Saving:  23.53%
+  Distortion:    1.8663%
 
 --- Image: Image_48 ---
   [Best Configuration]
   Voltage:       14.0 V
-  Strategy:      both
-  Power Saving:  16.63%
-  Distortion:    1.8247%
+  Strategy:      none
+  Off_Coeff:     0.0
+  Fac_Coeff:     0.0
+  Power Saving:  16.53%
+  Distortion:    1.8169%
 
 --- Image: Image_49 ---
   [Best Configuration]
   Voltage:       13.0 V
-  Strategy:      brightness
-  Power Saving:  24.29%
-  Distortion:    1.9864%
+  Strategy:      both
+  Off_Coeff:     0.3
+  Fac_Coeff:     0.5
+  Power Saving:  23.64%
+  Distortion:    1.8532%
 

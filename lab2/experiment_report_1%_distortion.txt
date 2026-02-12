@@ -1,0 +1,354 @@
+Assignment 2 - Part 2 Experiment Report
+=======================================
+Distortion Constraint: < 1.0%
+
+--- Image: Image_0 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.05%
+  Distortion:    0.0421%
+
+--- Image: Image_1 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.10%
+  Distortion:    0.0581%
+
+--- Image: Image_2 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.12%
+  Distortion:    0.0656%
+
+--- Image: Image_3 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.07%
+  Distortion:    0.0444%
+
+--- Image: Image_4 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.47%
+  Distortion:    0.8015%
+
+--- Image: Image_5 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.19%
+  Distortion:    0.0689%
+
+--- Image: Image_6 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.16%
+  Distortion:    0.0727%
+
+--- Image: Image_7 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.10%
+  Distortion:    0.0597%
+
+--- Image: Image_8 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Power Saving:  13.57%
+  Distortion:    0.9306%
+
+--- Image: Image_9 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.11%
+  Distortion:    0.0622%
+
+--- Image: Image_10 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.13%
+  Distortion:    0.0715%
+
+--- Image: Image_11 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.57%
+  Distortion:    0.8959%
+
+--- Image: Image_12 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.08%
+  Distortion:    0.0533%
+
+--- Image: Image_13 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.10%
+  Distortion:    0.0616%
+
+--- Image: Image_14 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.52%
+  Distortion:    0.8855%
+
+--- Image: Image_15 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.11%
+  Distortion:    0.0627%
+
+--- Image: Image_16 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.11%
+  Distortion:    0.0646%
+
+--- Image: Image_17 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.09%
+  Distortion:    0.0579%
+
+--- Image: Image_18 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.16%
+  Distortion:    0.0723%
+
+--- Image: Image_19 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.41%
+  Distortion:    0.7907%
+
+--- Image: Image_20 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.67%
+  Distortion:    0.8398%
+
+--- Image: Image_21 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      brightness
+  Power Saving:  13.79%
+  Distortion:    0.9260%
+
+--- Image: Image_22 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.10%
+  Distortion:    0.0550%
+
+--- Image: Image_23 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.07%
+  Distortion:    0.0492%
+
+--- Image: Image_24 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.09%
+  Distortion:    0.0555%
+
+--- Image: Image_25 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.79%
+  Distortion:    0.9551%
+
+--- Image: Image_26 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.11%
+  Distortion:    0.0644%
+
+--- Image: Image_27 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  11.91%
+  Distortion:    0.7679%
+
+--- Image: Image_28 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.05%
+  Distortion:    0.0339%
+
+--- Image: Image_29 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.14%
+  Distortion:    0.0712%
+
+--- Image: Image_30 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.74%
+  Distortion:    0.9916%
+
+--- Image: Image_31 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.16%
+  Distortion:    0.0728%
+
+--- Image: Image_32 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.09%
+  Distortion:    0.0534%
+
+--- Image: Image_33 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.10%
+  Distortion:    0.0577%
+
+--- Image: Image_34 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.55%
+  Distortion:    0.8834%
+
+--- Image: Image_35 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.12%
+  Distortion:    0.0665%
+
+--- Image: Image_36 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.09%
+  Distortion:    0.0536%
+
+--- Image: Image_37 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.41%
+  Distortion:    0.8524%
+
+--- Image: Image_38 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.15%
+  Distortion:    0.0666%
+
+--- Image: Image_39 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.10%
+  Distortion:    0.0611%
+
+--- Image: Image_40 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.15%
+  Distortion:    0.0650%
+
+--- Image: Image_41 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      contrast
+  Power Saving:  14.02%
+  Distortion:    0.9529%
+
+--- Image: Image_42 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.12%
+  Distortion:    0.0621%
+
+--- Image: Image_43 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.14%
+  Distortion:    0.8326%
+
+--- Image: Image_44 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.07%
+  Distortion:    0.0434%
+
+--- Image: Image_45 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.50%
+  Distortion:    0.8622%
+
+--- Image: Image_46 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.09%
+  Distortion:    0.0544%
+
+--- Image: Image_47 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.14%
+  Distortion:    0.0658%
+
+--- Image: Image_48 ---
+  [Best Configuration]
+  Voltage:       15.0 V
+  Strategy:      brightness
+  Power Saving:  0.13%
+  Distortion:    0.0646%
+
+--- Image: Image_49 ---
+  [Best Configuration]
+  Voltage:       14.0 V
+  Strategy:      both
+  Power Saving:  12.56%
+  Distortion:    0.9724%
+

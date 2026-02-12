@@ -139,7 +139,7 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
     switch (policy) {
 
         
-      /*case DPM_TIMEOUT:
+      case DPM_TIMEOUT:
             if(t_curr > t_inactive_start + tparams.timeout) {
                 *next_state = PSM_STATE_SLEEP;
                 //printf("DEBUG check transition ->: curr%.2f\n and timeout%.2f\n", t_curr, tparams.timeout);
@@ -147,7 +147,7 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
                 *next_state = PSM_STATE_RUN;
                 //printf("DEBUG check no transition ->: curr%.2f\n and timeout%.2f\n", t_curr, tparams.timeout);
             }
-            break;*/
+            break;
 
 	//simple version, using previous free time = next freetime  result:workload 2 good improve ,workload 1 bad penalty
   /* case DPM_HISTORY:
@@ -171,7 +171,7 @@ int dpm_decide_state(psm_state_t *next_state, psm_state_t prev_state, psm_time_t
             }
             break;
 	*/
-	case DPM_HISTORY:
+	/*case DPM_HISTORY:
 	    //Stage 2: Predictive Hybrid Policy
             psm_time_t predicted_time = history[DPM_HIST_WIND_SIZE - 1];
 
