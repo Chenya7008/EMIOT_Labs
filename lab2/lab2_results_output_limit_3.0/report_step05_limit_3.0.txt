@@ -1,0 +1,453 @@
+Part 2 Report - High Precision (0.5V Step)
+Distortion Constraint: < 3.0%
+------------------------------------------------------------
+--- Image_0 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0133
+  Actual b_factor: 1.0933
+  Power Saving:    26.64%
+  Distortion:      2.97%
+  [Saved Image]:   Best_Image_0_both_V13.0_PS26.6.png
+
+--- Image_1 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    30.36%
+  Distortion:      2.73%
+  [Saved Image]:   Best_Image_1_both_V12.5_PS30.4.png
+
+--- Image_2 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    29.79%
+  Distortion:      2.76%
+  [Saved Image]:   Best_Image_2_both_V12.5_PS29.8.png
+
+--- Image_3 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    30.19%
+  Distortion:      2.86%
+  [Saved Image]:   Best_Image_3_both_V12.5_PS30.2.png
+
+--- Image_4 ---
+  Optimal Voltage: 11.5 V
+  Strategy:        both
+  Actual b_offset: 0.0700
+  Actual b_factor: 1.1633
+  Power Saving:    40.47%
+  Distortion:      2.94%
+  [Saved Image]:   Best_Image_4_both_V11.5_PS40.5.png
+
+--- Image_5 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0833
+  Power Saving:    30.81%
+  Distortion:      2.98%
+  [Saved Image]:   Best_Image_5_both_V12.5_PS30.8.png
+
+--- Image_6 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600
+  Actual b_factor: 1.1400
+  Power Saving:    35.42%
+  Distortion:      2.97%
+  [Saved Image]:   Best_Image_6_both_V12.0_PS35.4.png
+
+--- Image_7 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    31.52%
+  Distortion:      2.87%
+  [Saved Image]:   Best_Image_7_both_V12.5_PS31.5.png
+
+--- Image_8 ---
+  Optimal Voltage: 11.0 V
+  Strategy:        both
+  Actual b_offset: 0.0800
+  Actual b_factor: 1.1867
+  Power Saving:    43.73%
+  Distortion:      3.00%
+  [Saved Image]:   Best_Image_8_both_V11.0_PS43.7.png
+
+--- Image_9 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0333
+  Actual b_factor: 1.1167
+  Power Saving:    32.03%
+  Distortion:      2.99%
+  [Saved Image]:   Best_Image_9_both_V12.5_PS32.0.png
+
+--- Image_10 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0833
+  Power Saving:    31.07%
+  Distortion:      2.84%
+  [Saved Image]:   Best_Image_10_both_V12.5_PS31.1.png
+
+--- Image_11 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.1400
+  Power Saving:    36.08%
+  Distortion:      2.89%
+  [Saved Image]:   Best_Image_11_both_V12.0_PS36.1.png
+
+--- Image_12 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    29.96%
+  Distortion:      2.75%
+  [Saved Image]:   Best_Image_12_both_V12.5_PS30.0.png
+
+--- Image_13 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0167
+  Actual b_factor: 1.1167
+  Power Saving:    32.96%
+  Distortion:      3.00%
+  [Saved Image]:   Best_Image_13_both_V12.5_PS33.0.png
+
+--- Image_14 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.1400
+  Power Saving:    36.04%
+  Distortion:      2.87%
+  [Saved Image]:   Best_Image_14_both_V12.0_PS36.0.png
+
+--- Image_15 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.0400
+  Power Saving:    26.70%
+  Distortion:      2.91%
+  [Saved Image]:   Best_Image_15_both_V13.0_PS26.7.png
+
+--- Image_16 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0833
+  Power Saving:    31.26%
+  Distortion:      2.81%
+  [Saved Image]:   Best_Image_16_both_V12.5_PS31.3.png
+
+--- Image_17 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0133
+  Actual b_factor: 1.0933
+  Power Saving:    27.19%
+  Distortion:      2.98%
+  [Saved Image]:   Best_Image_17_both_V13.0_PS27.2.png
+
+--- Image_18 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0333
+  Actual b_factor: 1.1167
+  Power Saving:    30.50%
+  Distortion:      2.79%
+  [Saved Image]:   Best_Image_18_both_V12.5_PS30.5.png
+
+--- Image_19 ---
+  Optimal Voltage: 11.5 V
+  Strategy:        both
+  Actual b_offset: 0.0700
+  Actual b_factor: 1.1633
+  Power Saving:    40.31%
+  Distortion:      2.89%
+  [Saved Image]:   Best_Image_19_both_V11.5_PS40.3.png
+
+--- Image_20 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.1000
+  Power Saving:    37.72%
+  Distortion:      2.96%
+  [Saved Image]:   Best_Image_20_both_V12.0_PS37.7.png
+
+--- Image_21 ---
+  Optimal Voltage: 11.5 V
+  Strategy:        both
+  Actual b_offset: 0.0700
+  Actual b_factor: 1.0700
+  Power Saving:    41.25%
+  Distortion:      2.90%
+  [Saved Image]:   Best_Image_21_both_V11.5_PS41.2.png
+
+--- Image_22 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0500
+  Power Saving:    31.92%
+  Distortion:      2.97%
+  [Saved Image]:   Best_Image_22_both_V12.5_PS31.9.png
+
+--- Image_23 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        contrast
+  Actual b_offset: 0.0000
+  Actual b_factor: 1.0933
+  Power Saving:    27.52%
+  Distortion:      2.97%
+  [Saved Image]:   Best_Image_23_contrast_V13.0_PS27.5.png
+
+--- Image_24 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0500
+  Power Saving:    32.20%
+  Distortion:      2.92%
+  [Saved Image]:   Best_Image_24_both_V12.5_PS32.2.png
+
+--- Image_25 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600
+  Actual b_factor: 1.1400
+  Power Saving:    35.26%
+  Distortion:      2.83%
+  [Saved Image]:   Best_Image_25_both_V12.0_PS35.3.png
+
+--- Image_26 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    30.38%
+  Distortion:      2.77%
+  [Saved Image]:   Best_Image_26_both_V12.5_PS30.4.png
+
+--- Image_27 ---
+  Optimal Voltage: 11.5 V
+  Strategy:        both
+  Actual b_offset: 0.0700
+  Actual b_factor: 1.1167
+  Power Saving:    40.00%
+  Distortion:      2.98%
+  [Saved Image]:   Best_Image_27_both_V11.5_PS40.0.png
+
+--- Image_28 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0267
+  Actual b_factor: 1.0400
+  Power Saving:    28.35%
+  Distortion:      2.99%
+  [Saved Image]:   Best_Image_28_both_V13.0_PS28.4.png
+
+--- Image_29 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0333
+  Actual b_factor: 1.0833
+  Power Saving:    32.79%
+  Distortion:      2.98%
+  [Saved Image]:   Best_Image_29_both_V12.5_PS32.8.png
+
+--- Image_30 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600
+  Actual b_factor: 1.1400
+  Power Saving:    35.00%
+  Distortion:      2.89%
+  [Saved Image]:   Best_Image_30_both_V12.0_PS35.0.png
+
+--- Image_31 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.0400
+  Power Saving:    27.15%
+  Distortion:      2.87%
+  [Saved Image]:   Best_Image_31_both_V13.0_PS27.1.png
+
+--- Image_32 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0833
+  Power Saving:    30.80%
+  Distortion:      2.74%
+  [Saved Image]:   Best_Image_32_both_V12.5_PS30.8.png
+
+--- Image_33 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0500
+  Power Saving:    32.11%
+  Distortion:      2.93%
+  [Saved Image]:   Best_Image_33_both_V12.5_PS32.1.png
+
+--- Image_34 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.1400
+  Power Saving:    36.46%
+  Distortion:      2.97%
+  [Saved Image]:   Best_Image_34_both_V12.0_PS36.5.png
+
+--- Image_35 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0333
+  Actual b_factor: 1.1167
+  Power Saving:    32.64%
+  Distortion:      2.96%
+  [Saved Image]:   Best_Image_35_both_V12.5_PS32.6.png
+
+--- Image_36 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    29.87%
+  Distortion:      2.76%
+  [Saved Image]:   Best_Image_36_both_V12.5_PS29.9.png
+
+--- Image_37 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.1400
+  Power Saving:    35.76%
+  Distortion:      2.75%
+  [Saved Image]:   Best_Image_37_both_V12.0_PS35.8.png
+
+--- Image_38 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0833
+  Power Saving:    29.98%
+  Distortion:      2.79%
+  [Saved Image]:   Best_Image_38_both_V12.5_PS30.0.png
+
+--- Image_39 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0833
+  Power Saving:    31.91%
+  Distortion:      3.00%
+  [Saved Image]:   Best_Image_39_both_V12.5_PS31.9.png
+
+--- Image_40 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600
+  Actual b_factor: 1.1400
+  Power Saving:    34.32%
+  Distortion:      2.99%
+  [Saved Image]:   Best_Image_40_both_V12.0_PS34.3.png
+
+--- Image_41 ---
+  Optimal Voltage: 11.0 V
+  Strategy:        both
+  Actual b_offset: 0.0800
+  Actual b_factor: 1.1867
+  Power Saving:    43.47%
+  Distortion:      2.88%
+  [Saved Image]:   Best_Image_41_both_V11.0_PS43.5.png
+
+--- Image_42 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0267
+  Actual b_factor: 1.0933
+  Power Saving:    26.84%
+  Distortion:      2.92%
+  [Saved Image]:   Best_Image_42_both_V13.0_PS26.8.png
+
+--- Image_43 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.1000
+  Power Saving:    36.48%
+  Distortion:      2.98%
+  [Saved Image]:   Best_Image_43_both_V12.0_PS36.5.png
+
+--- Image_44 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.0833
+  Power Saving:    31.50%
+  Distortion:      3.00%
+  [Saved Image]:   Best_Image_44_both_V12.5_PS31.5.png
+
+--- Image_45 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.1400
+  Power Saving:    36.11%
+  Distortion:      2.84%
+  [Saved Image]:   Best_Image_45_both_V12.0_PS36.1.png
+
+--- Image_46 ---
+  Optimal Voltage: 13.0 V
+  Strategy:        both
+  Actual b_offset: 0.0400
+  Actual b_factor: 1.0667
+  Power Saving:    26.91%
+  Distortion:      2.93%
+  [Saved Image]:   Best_Image_46_both_V13.0_PS26.9.png
+
+--- Image_47 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0333
+  Actual b_factor: 1.1167
+  Power Saving:    31.10%
+  Distortion:      2.76%
+  [Saved Image]:   Best_Image_47_both_V12.5_PS31.1.png
+
+--- Image_48 ---
+  Optimal Voltage: 12.5 V
+  Strategy:        both
+  Actual b_offset: 0.0500
+  Actual b_factor: 1.1167
+  Power Saving:    30.63%
+  Distortion:      2.81%
+  [Saved Image]:   Best_Image_48_both_V12.5_PS30.6.png
+
+--- Image_49 ---
+  Optimal Voltage: 12.0 V
+  Strategy:        both
+  Actual b_offset: 0.0600
+  Actual b_factor: 1.1400
+  Power Saving:    34.36%
+  Distortion:      2.82%
+  [Saved Image]:   Best_Image_49_both_V12.0_PS34.4.png
+
