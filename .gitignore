@@ -1,3 +1,4 @@
 *.zip
 *.ova
 
+.DS_Store
