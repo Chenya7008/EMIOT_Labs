@@ -4,29 +4,27 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # ==============================================================================
-# 1. 配置区 - 请根据你的实验任务修改
+# 1. Configuration - modify according to your experiment
 # ==============================================================================
-# C语言模拟器的可执行文件路径
+# Path to the C simulator executable
 SIMULATOR_EXEC = './dpm_simulator'
 
 
 #WORKLOAD_FILE = '../../workloads/workloads/workload_2.txt'
 #WORKLOAD_FILE = '../../workloads/workloads/workload_1.txt'
-WORKLOAD_FILE = '../../workloads/workloads/workload_ramp.txt'
-#WORKLOAD_FILE = '../../workloads/workloads/workload_hover.txt'
 
 PSM_FILE = 'example/psm.txt'
 
-# 你想要测试的超时值范围
-# 例如 range(1, 101, 2) 表示从1到100，每隔2测试一次 (1, 3, 5...)
+# Timeout range to test
+# e.g. range(1, 101, 2) means 1 to 100, step 2 (1, 3, 5...)
 TIMEOUT_RANGE = range(0,101, 1)
 
 # ==============================================================================
-# 2. 脚本核心功能区 - 无需修改
+# 2. Core script functions - no modification needed
 # ==============================================================================
 
 def run_simulation(timeout, workload_path, psm_path):
-    """构建命令、运行模拟器并返回输出结果"""
+    """Build command, run simulator and return output"""
     command = [
         SIMULATOR_EXEC,
         '-t', str(timeout),
@@ -37,7 +35,7 @@ def run_simulation(timeout, workload_path, psm_path):
     return result.stdout
 
 def parse_output(output_text):
-    """使用正则表达式从输出文本中解析所有关键数据"""
+    """Parse all key data from output text using regex"""
     patterns = {
         'active_time': r"\[sim\] Active time in profile = ([\d.]+)s",
         'inactive_time': r"\[sim\] Inactive time in profile = ([\d.]+)s",
@@ -53,7 +51,7 @@ def parse_output(output_text):
         'energy_no_dpm': r"\[sim\] Tot\. Energy w/o DPM = ([\d.]+)J",
         'energy_dpm': r"\[sim\] Tot\. Energy w/o DPM = .*?, Tot\. Energy w DPM = ([\d.]+)J"
     }
-    
+
     parsed_data = {}
     for key, pattern in patterns.items():
         match = re.search(pattern, output_text)
@@ -62,100 +60,100 @@ def parse_output(output_text):
             parsed_data[key] = float(value_str) if '.' in value_str else int(value_str)
         else:
             parsed_data[key] = None
-            
+
     return parsed_data
 
 
 
 def analyze_workload_distribution(filepath):
     """
-    直接读取 workload 文件，计算所有 idle time 的分布情况。
-    这能帮你解释为什么在特定 Timeout 值发生了 Transition 骤降。
+    Read workload file and compute idle time distribution.
+    Helps explain why transitions drop sharply at certain timeout values.
     """
     try:
-        # 读取 workload 文件 (假设是 空格分隔)
-        # 格式: start_time duration
+        # Read workload file (space-separated)
+        # Format: start_time duration
         df = pd.read_csv(filepath, sep=r'\s+', header=None, names=['start', 'duration'])
-        
-        # 计算 Idle Time
-        # Idle = 当前任务开始时间 - (上一个任务开始时间 + 上一个任务持续时间)
+
+        # Compute idle time
+        # Idle = current task start - (previous task start + previous task duration)
         df['prev_end'] = df['start'].shift(1) + df['duration'].shift(1)
         df['idle_time'] = df['start'] - df['prev_end']
-        
-        # 去掉第一行 (NaN) 和 负数/零 (如果有的话)
+
+        # Drop first row (NaN) and non-positive values
         df = df.dropna()
         df = df[df['idle_time'] > 0]
-        
-        # 统计每种 idle time 出现的次数
+
+        # Count occurrences of each idle time value
         distribution = df['idle_time'].value_counts().sort_index()
-        
+
         print("\n" + "="*50)
-        print(f"WORKLOAD 深度透视: {filepath}")
+        print(f"WORKLOAD ANALYSIS: {filepath}")
         print("="*50)
-        print(f"{'Idle Time (ms)':<20} | {'Count (出现的次数)':<15} | {'需要设置的 Timeout > X 才能过滤'}")
+        print(f"{'Idle Time (ms)':<20} | {'Count':<15} | {'Timeout threshold to suppress transition'}")
         print("-" * 65)
-        
+
         for idle_val, count in distribution.items():
-            # 只有当 Timeout 设置得比 idle_val 大时，这个 idle 期间才不会发生 transition
+            # A transition is suppressed only when Timeout > idle_val
             threshold = int(idle_val)
             print(f"{idle_val:<20} | {count:<15} | Timeout > {threshold} ms")
-            
+
         print("-" * 65)
-        print("提示: 当你的 Timeout 设置跨过上述 'Idle Time' 值时，")
-        print("      Transition 次数就会发生'阶梯式'下降。")
+        print("Tip: each time your Timeout crosses one of the idle time values above,")
+        print("     the transition count drops by a step.")
         print("="*50 + "\n")
-        
+
     except Exception as e:
-        print(f"无法分析 Workload 文件: {e}")
+        print(f"Failed to analyze workload file: {e}")
 
 # ==========================================
-# 在主程序中调用 (放在循环开始前)
+# Call before the main loop
 # ==========================================
-# ... 你的代码 ...
+# ... your code ...
 
-# 在这里插入调用:
+# Insert call here:
 analyze_workload_distribution(WORKLOAD_FILE)
 
 
-# --- 主程序开始 ---
+# --- Main program ---
 all_results = []
-print(f"开始批量测试 {WORKLOAD_FILE}...")
-print(f"测试超时范围: {TIMEOUT_RANGE.start}ms to {TIMEOUT_RANGE.stop - 1}ms")
+print(f"Starting batch test for {WORKLOAD_FILE}...")
+print(f"Timeout range: {TIMEOUT_RANGE.start}ms to {TIMEOUT_RANGE.stop - 1}ms")
 
 for t in TIMEOUT_RANGE:
     try:
-        print(f"正在运行 t = {t}ms...", end='', flush=True)
+        print(f"Running t = {t}ms...", end='', flush=True)
         output = run_simulation(t, WORKLOAD_FILE, PSM_FILE)
         data = parse_output(output)
         data['timeout'] = t
         all_results.append(data)
-        print(" 完成")
+        print(" done")
     except subprocess.CalledProcessError as e:
-        print(f"\n错误：运行模拟器失败 (t={t}ms)。")
+        print(f"\nError: simulator failed (t={t}ms).")
         print(e.stderr)
         break
     except Exception as e:
-        print(f"\n错误：处理数据时发生未知错误 (t={t}ms): {e}")
+        print(f"\nError: unexpected error (t={t}ms): {e}")
         break
 
 df_results = pd.DataFrame(all_results)
 print("\n" + "="*50)
-print("实验结果汇总 (已包含所有字段)")
+print("Results summary")
 print("="*50)
 print(df_results)
 
 # ==============================================================================
-# 添加最简单的文本输出功能
+# Save results to text file
 # ==============================================================================
-# 创建文本文件
+# Create output filename
 output_txt_filename = f'results_{WORKLOAD_FILE.split("/")[-1].split(".")[0]}.txt'
 
-# 直接将DataFrame保存为文本文件
+# Save DataFrame to text file
 df_results.to_csv(output_txt_filename, sep='\t', index=False, float_format='%.6f')
-print(f"\n测试结果已保存到文本文件: {output_txt_filename}")
+print(f"\nResults saved to: {output_txt_filename}")
 
 # ==============================================================================
-# 3. 结果可视化区 (保持不变)
+# 3. Visualization
 # ==============================================================================
 if not df_results.empty and 'energy_dpm' in df_results.columns and df_results['energy_dpm'].notna().any():
     plt.style.use('seaborn-v0_8-whitegrid')
@@ -170,7 +168,7 @@ if not df_results.empty and 'energy_dpm' in df_results.columns and df_results['e
     min_energy_point = df_results.loc[df_results['energy_dpm'].idxmin()]
     optimal_t = min_energy_point['timeout']
     min_energy = min_energy_point['energy_dpm']
-    ax1.scatter(optimal_t, min_energy, color='red', s=150, zorder=5, 
+    ax1.scatter(optimal_t, min_energy, color='red', s=150, zorder=5,
                 label=f'Optimal Point\nt={int(optimal_t)}ms, E={min_energy:.4f}J')
 
     ax2 = ax1.twinx()
@@ -182,8 +180,8 @@ if not df_results.empty and 'energy_dpm' in df_results.columns and df_results['e
     plt.title(f'Analysis for {WORKLOAD_FILE}', fontsize=16, fontweight='bold')
     fig.tight_layout()
     fig.legend(loc="upper right", bbox_to_anchor=(1,1), bbox_transform=ax1.transAxes)
-    
+
     output_filename = f'analysis_{WORKLOAD_FILE.split("/")[-1].split(".")[0]}.png'
     plt.savefig(output_filename)
-    print(f"\n图表已保存为: {output_filename}")
+    print(f"\nPlot saved as: {output_filename}")
     plt.show()
