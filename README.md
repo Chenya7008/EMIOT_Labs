@@ -12,7 +12,7 @@ Please read the README file in each subfolder — the corresponding reports are 
 |-----------|-------|
 | [lab1/](lab1/) | Dynamic Power Management (DPM) — simulator & workload analysis |
 | [lab2/](lab2/) | Battery modelling & image processing with energy constraints |
-| [lab3/](lab3/) | Energy harvesting simulation (EM4IoT) & solar converter |
+| [lab3/](lab3/) | Energy harvesting simulation& solar converter |
 
 ## Commit conventions
 
@@ -33,4 +33,3 @@ Please read the README file in each subfolder — the corresponding reports are 
 ./dpm_simulator -h 0 0 0 0 0 0 0 -psm example/psm.txt -wl ../../workloads/workloads/workload_ramp.txt
 ```
 
-Policy rule logic is implemented in `utilities.c`.
