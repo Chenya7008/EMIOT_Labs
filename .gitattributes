@@ -1,2 +1,4 @@
 lab3/sim_trace.txt filter=lfs diff=lfs merge=lfs -text
 lab3/se_sim_trace.txt filter=lfs diff=lfs merge=lfs -text
+lab3/txt_record/**/sim_trace.txt filter=lfs diff=lfs merge=lfs -text
+lab3/sim_trace_record/**/sim_trace.txt filter=lfs diff=lfs merge=lfs -text
