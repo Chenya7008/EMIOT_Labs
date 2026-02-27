@@ -1,4 +1,4 @@
-# Lab 2 — Display Power Management (CAMEL)
+# Lab 2 — Display Power Management
 
 ## Directory Structure
 
