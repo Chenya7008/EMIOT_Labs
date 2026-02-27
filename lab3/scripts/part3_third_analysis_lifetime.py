@@ -7,13 +7,13 @@ OUTPUT_IMG = 'lifetime_analysis.png'
 
 
 def plot_lifetime_optimized():
-    print(f"[-] 正在使用 C 引擎读取文件 {FILENAME} ...")
+    print(f"[-] Reading {FILENAME} with C engine ...")
     
     try:
        
         df = pd.read_csv(FILENAME, delim_whitespace=True, engine='c')
     except FileNotFoundError:
-        print(f"错误: 找不到 {FILENAME}")
+        print(f"Error: file not found: {FILENAME}")
         return
 
     
@@ -27,7 +27,7 @@ def plot_lifetime_optimized():
     df.reset_index(drop=True, inplace=True)
 
     if df.empty:
-        print("错误：数据为空 (可能被全部过滤)")
+        print("Error: data is empty (possibly all filtered out)")
         return
 
     
@@ -48,10 +48,10 @@ def plot_lifetime_optimized():
         status = "ALIVE (Running)"
         color_status = "green"
 
-    print(f"[-] 分析结果: 状态={status}, 寿命={lifetime_days:.2f} 天")
+    print(f"[-] Result: status={status}, lifetime={lifetime_days:.2f} days")
 
     
-    print("[-] 正在绘图...")
+    print("[-] Plotting ...")
     
     
     step = 1000
@@ -86,7 +86,7 @@ def plot_lifetime_optimized():
     
     plt.tight_layout()
     plt.savefig(OUTPUT_IMG, dpi=200)
-    print(f"[-] 图表已保存为: {OUTPUT_IMG}")
+    print(f"[-] Chart saved as: {OUTPUT_IMG}")
     
 
 if __name__ == "__main__":

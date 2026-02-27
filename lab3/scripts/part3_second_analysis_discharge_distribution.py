@@ -3,34 +3,34 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # ==========================================
-# 1. 数据加载与预处理
+# 1. Data loading and preprocessing
 # ==========================================
 def load_and_clean_data(filepath):
     df = pd.read_csv(filepath, sep='\s+', engine='python')
     df.columns = df.columns.str.replace('%', '')
     df['day'] = df['time'] / 86400 
     
-    # 基础物理量计算
+    # Basic physical quantity calculation
     df['i_load_true'] = df['i_tot'] + df['real_i_pv']
     df['P_load'] = df['i_load_true'] * 3.3
     df['P_pv_out'] = df['real_i_pv'] * 3.3
     df['P_batt'] = df['i_batt'] * df['v_batt']
     
-    # --- 关键修正：区分“白天”和“黑夜” ---
-    # 定义黑夜：光伏输出几乎为0的时候 (防止白天偶尔的云遮挡，取极小阈值)
+    # --- Key fix: distinguish "day" and "night" ---
+    # Define night: when PV output is nearly 0 (use small threshold to avoid occasional cloud cover)
     df['is_night'] = df['real_i_pv'] < 0.001 
 
-    # --- 计算电池放电效率 ---
-    # 条件：1. 总线在向电池要电 (i_tot > 0)
-    #       2. 电池确实在输出电流 (i_batt > 0)
+    # --- Compute battery discharge efficiency ---
+    # Condition: 1. Bus is drawing from battery (i_tot > 0)
+    #           2. Battery is actually outputting current (i_batt > 0)
     df['batt_eff_raw'] = np.where(
         (df['i_tot'] > 0) & (df['i_batt'] > 0),
         (df['i_tot'] * 3.3) / (df['i_batt'] * df['v_batt']) * 100,
         np.nan 
     )
     
-    # 数据清洗：去除仿真器延迟导致的数学伪影 (>100%)
-    # 注意：我们保留低效点，只去除物理上不可能的点
+    # Data cleaning: remove math artifacts from simulator delay (>100%)
+    # Note: keep low-efficiency points, only remove physically impossible ones
     df['batt_eff_clean'] = df['batt_eff_raw'].mask(df['batt_eff_raw'] > 100)
     
     return df
@@ -38,22 +38,22 @@ def load_and_clean_data(filepath):
 df = load_and_clean_data('sim_trace.txt')
 
 # ==========================================
-# 图表 A: 效率 vs 负载电流 (Scatter Plot)
-# 这是工程上最标准的分析方法，完美避免“误丢弃”
+# Chart A: efficiency vs load current (Scatter Plot)
+# This is the most standard engineering analysis method, avoids false rejection
 # ==========================================
-# 提取有效放电数据
+# Extract valid discharge data
 discharge_data = df.dropna(subset=['batt_eff_clean'])
 
 
 # ==========================================
-# 图表 B: 效率分布直方图 (对比日夜)
+# Chart B: efficiency distribution histogram (day vs night)
 # ==========================================
 night_eff = discharge_data[discharge_data['is_night'] == True]['batt_eff_clean']
 day_eff = discharge_data[discharge_data['is_night'] == False]['batt_eff_clean']
 
 plt.figure(figsize=(12, 5))
 
-# 绘制堆叠直方图，清楚看到低效数据主要来自晚上
+# Stacked histogram shows low-efficiency data mainly at night
 plt.hist([day_eff, night_eff], bins=50, stacked=True, 
          color=['blue', 'red'], label=['Daytime Discharge', 'Nighttime Discharge'],
          edgecolor='black', alpha=0.7)
@@ -68,17 +68,17 @@ plt.tight_layout()
 plt.show()
 
 # ==========================================
-# 控制台数据分析输出
+# Console data analysis output
 # ==========================================
-print("--- 深度效率分析 ---")
-print(f"总放电时长: {len(discharge_data)} 秒")
-print(f"  - 夜间放电时长: {len(night_eff)} 秒 (主要处于低效区)")
-print(f"  - 白天放电时长: {len(day_eff)} 秒 (主要处于高效区)")
+print("--- In-depth efficiency analysis ---")
+print(f"Total discharge duration: {len(discharge_data)} s")
+print(f"  - Night discharge: {len(night_eff)} s (mainly low-efficiency zone)")
+print(f"  - Day discharge: {len(day_eff)} s (mainly high-efficiency zone)")
 print("-" * 30)
-print(f"夜间平均放电效率: {night_eff.mean():.2f}% (Bad Area!)")
-print(f"白天平均放电效率: {day_eff.mean():.2f}% (Good Area)")
+print(f"Night avg discharge efficiency: {night_eff.mean():.2f}% (Bad Area!")
+print(f"Day avg discharge efficiency: {day_eff.mean():.2f}% (Good Area)")
 print("-" * 30)
-# 统计真正的“低效时间”占比
+# Compute fraction of truly low-efficiency time
 low_eff_count = len(discharge_data[discharge_data['batt_eff_clean'] < 40])
-print(f"处于低效率区间 (<40%) 的总时长: {low_eff_count} 秒")
-print(f"低效率时间占比: {(low_eff_count / len(discharge_data)) * 100:.2f}%")
+print(f"Total time in low-efficiency zone (<40%): {low_eff_count} s")
+print(f"Low-efficiency time fraction: {(low_eff_count / len(discharge_data)) * 100:.2f}%")
