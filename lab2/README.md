@@ -16,7 +16,6 @@ lab2/
 ├── test_images/            # 50 natural images from the BSDS500 dataset
 ├── part1_results/          # Result plots for Part 1
 └── part2_results/          # Result plots and logs for Part 2
-    ├── best_images_output/
     ├── lab2_final_analysis/
     ├── lab2_results_output_limit_1.0/
     ├── lab2_results_output_limit_2.0/
