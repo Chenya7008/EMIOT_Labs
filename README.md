@@ -1,5 +1,6 @@
 # EMIOT_Labs
 For EMIOT course
+repolink: Chenya7008/EMIOT_Labs
 # Please read the readme file in each subfolder. The corresponding reports are contained within the subfolders.
 [Commit Rules]
 updated: useful new elements
