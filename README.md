@@ -1,6 +1,6 @@
 # EMIOT_Labs
 For EMIOT course
-
+# Please read the readme file in each subfolder. The corresponding reports are contained within the subfolders.
 [Commit Rules]
 updated: useful new elements
 fixed: modified old files
