@@ -14,15 +14,6 @@ Please read the README file in each subfolder — the corresponding reports are 
 | [lab2/](lab2/) | Battery modelling & image processing with energy constraints |
 | [lab3/](lab3/) | Energy harvesting simulation& solar converter |
 
-## Commit conventions
-
-| Prefix | Meaning |
-|--------|---------|
-| `updated` | new or improved content |
-| `fixed` | bug fix or correction to existing files |
-| `test` | experimental / work-in-progress |
-| `delete` | removed unused files |
-
 ## Lab 1 — DPM Simulator quick reference
 
 ```bash
