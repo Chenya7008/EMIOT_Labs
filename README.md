@@ -4,7 +4,8 @@
 
 Lab assignments for the **Energy Management in IoT** course at Politecnico di Torino.
 
-Please read the README file in each subfolder — the corresponding reports are contained within.
+> Each lab subfolder contains its own **README** with detailed instructions and a lab report PDF.
+> See: [lab1/README.md](lab1/README.md) · [lab2/README.md](lab2/README.md) · [lab3/readme.md](lab3/readme.md)
 
 ## Structure
 
